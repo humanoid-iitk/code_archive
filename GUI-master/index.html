@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> ROS GUI </title>
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/eventemitter2.min.js"></script>
+    <script src="js/roslib.min.js"></script>
+    <script type="text/javascript">
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class = "navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+      <div class = "navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+      </button>
+      <a class="navbar-brand" href="#">ROS GUI</a>
+      </div>
+    <div>
+      <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+
+<table align="center" class=".table">
+<tr>
+	<th width="170" align="center"></th>
+	<th width="135" align="center">SERVO 8</th>
+	<th width="135" align="center">SERVO 9</th>
+	<th width="135" align="center">SERVO 10</th>
+	<th width="135" align="center">SERVO 11</th>
+	<th width="135" align="center">SERVO 12</th>
+	<th width="135" align="center">SERVO 13</th>
+	<th width="135" align="center">SERVO 14</th>
+	<th width="135" align="center">SERVO 15</th>
+	<th width="135" align="center">SERVO 16</th>
+	<th width="135" align="center">SERVO 17</th>
+</tr>
+	
+<tr>
+  <td>string name</td>
+  <td id="1.1">1s</td>
+  <td id="1.2">1s</td>
+  <td id="1.3">1s</td>
+  <td id="1.4">1s</td>
+  <td id="1.5">1s</td>
+  <td id="1.6">1s</td>
+  <td id="1.7">1s</td>
+  <td id="1.8">1s</td>
+  <td id="1.9">1s</td>
+  <td id="1.10">1s</td>
+</tr>
+<tr>
+  <td>int32[] motor_ids</td>
+  <td id="2.1">1s</td>
+  <td id="2.2">1s</td>
+  <td id="2.3">1s</td>
+  <td id="2.4">1s</td>
+  <td id="2.5">1s</td>
+  <td id="2.6">1s</td>
+  <td id="2.7">1s</td>
+  <td id="2.8">1s</td>
+  <td id="2.9">1s</td>
+  <td id="2.10">1s</td>
+</tr>
+<tr>
+  <td>int32[] motor_temps</td>
+  <td id="3.1">1s</td>
+  <td id="3.2">1s</td>
+  <td id="3.3">1s</td>
+  <td id="3.4">1s</td>
+  <td id="3.5">1s</td>
+  <td id="3.6">1s</td>
+  <td id="3.7">1s</td>
+  <td id="3.8">1s</td>
+  <td id="3.9">1s</td>
+  <td id="3.10">1s</td>
+</tr>
+<tr>
+  <td>float64 goal_pos</td>
+  <td id="4.1">1s</td>
+  <td id="4.2">1s</td>
+  <td id="4.3">1s</td>
+  <td id="4.4">1s</td>
+  <td id="4.5">1s</td>
+  <td id="4.6">1s</td>
+  <td id="4.7">1s</td>
+  <td id="4.8">1s</td>
+  <td id="4.9">1s</td>
+  <td id="4.10">1s</td>
+</tr>
+<tr>
+  <td>float64 current_pos</td>
+  <td id="5.1">1s</td>
+  <td id="5.2">1s</td>
+  <td id="5.3">1s</td>
+  <td id="5.4">1s</td>
+  <td id="5.5">1s</td>
+  <td id="5.6">1s</td>
+  <td id="5.7">1s</td>
+  <td id="5.8">1s</td>
+  <td id="5.9">1s</td>
+  <td id="5.10">1s</td>
+</tr>
+<tr>
+  <td>float64 error</td>
+  <td id="6.1">1s</td>
+  <td id="6.2">1s</td>
+  <td id="6.3">1s</td>
+  <td id="6.4">1s</td>
+  <td id="6.5">1s</td>
+  <td id="6.6">1s</td>
+  <td id="6.7">1s</td>
+  <td id="6.8">1s</td>
+  <td id="6.9">1s</td>
+  <td id="6.10">1s</td>
+</tr>
+<tr>
+  <td>float64 velocity</td>
+  <td id="7.1">1s</td>
+  <td id="7.2">1s</td>
+  <td id="7.3">1s</td>
+  <td id="7.4">1s</td>
+  <td id="7.5">1s</td>
+  <td id="7.6">1s</td>
+  <td id="7.7">1s</td>
+  <td id="7.8">1s</td>
+  <td id="7.9">1s</td>
+  <td id="7.10">1s</td>
+</tr>
+<tr>
+  <td>float64 load</td>
+  <td id="8.1">1s</td>
+  <td id="8.2">1s</td>
+  <td id="8.3">2s</td>
+  <td id="8.4">1s</td>
+  <td id="8.5">1s</td>
+  <td id="8.6">1s</td>
+  <td id="8.7">1s</td>
+  <td id="8.8">1s</td>
+  <td id="8.9">1s</td>
+  <td id="8.10">1s</td>
+</tr>
+<tr>
+  <td>bool is_moving</td>
+  <td id="9.1">1s</td>
+  <td id="9.2">1s</td>
+  <td id="9.3">1s</td>
+  <td id="9.4">1s</td>
+  <td id="9.5">1s</td>
+  <td id="9.6">1s</td>
+  <td id="9.7">1s</td>
+  <td id="9.8">1s</td>
+  <td id="9.9">1s</td>
+  <td id="9.10">1s</td>
+</tr>
+</table>
+
+
+<br>
+
+</table>
+</div>
+</body>
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!  -->    <!-- <script src="js/bootstrap.min.js"></script>
+ --> 
+ <script src="js/script.js"></script>
+ </script>
+  </body>
+</html>

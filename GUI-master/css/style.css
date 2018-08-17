@@ -1,0 +1,45 @@
+body {
+    position: relative;
+  }
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+  .affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+  }
+
+  #section1 {
+    padding-top:50px;
+    color: #fff;
+  }
+
+<<<<<<< HEAD
+table, td {
+=======
+  #section2 {
+    padding-top: 50px;
+    height:500px;
+    color: #fff;
+  }
+table, th, td {
+>>>>>>> a0ec03cedea0f55a4d84091a2e4815f4a133fcb9
+    border: 2px solid black;
+    text-align: center;
+
+    color: black;
+    padding=15px;
+    font-size:20px;
+    width:200;
+}
+
+th{
+  column-width: 200;
+  border: 2px solid black;
+  width:200;
+}
